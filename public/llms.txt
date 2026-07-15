@@ -7,41 +7,41 @@
 ## Pages
 
 ### בית
-https://-2df2e783.zappy5.app
+https://example.com
 מחפשים חברת בנייה ושיפוצים שעושה הכל? מאפס ועד מפתח, אנחנו מתמחים בבנייה, שיפוץ דירה, חשמל, אינסטלציה והיתרי כיבוי אש. לחצו לייעוץ חינם עוד היום!
 
 ### שירותים
-https://-2df2e783.zappy5.app/services
+https://example.com/services
 מחשמל ואינסטלציה ועד קונסטרוקציה ושיפוץ חדר רחצה – גלו את סל שירותי הבנייה והשיפוצים המקיף שלנו. מומחיות אמיתית, פרויקט אחד. היכנסו לראות מה אנחנו יכולים לעשות עבורכם!
 
 ### פרויקטים
-https://-2df2e783.zappy5.app/projects
+https://example.com/projects
 רוצים לראות בנייה ושיפוצים ברמה הגבוהה ביותר? צללו לתיק העבודות שלנו: פרויקטים למגורים, עסקים, עבודות חשמל מורכבות ושיפוצי דירה מעוררי השראה. בואו לקבל רעיונות לפרויקט שלכם!
 
 ### אודות
-https://-2df2e783.zappy5.app/about
+https://example.com/about
 פתרונות יצירתיים זה הרבה יותר מחברת בנייה. אנחנו צוות של מהנדסי קונסטרוקציה, חשמלאים, אינסטלטורים ומומחי כיבוי אש תחת קורת גג אחת. קראו איך אנחנו הופכים כל פרויקט לחוויה חלקה ובטוחה.
 
 ### צור קשר
-https://-2df2e783.zappy5.app/contact
+https://example.com/contact
 מוכנים להתחיל בבנייה, בשיפוץ הדירה או בכל פרויקט אחר? דברו איתנו עוד היום! בין אם אתם צריכים חשמלאי, אינסטלטור או ליווי הנדסי מלא – אנחנו כאן. צרו קשר והפכו את החזון למציאות.
 
 ### תודה שפניתם אלינו
-https://-2df2e783.zappy5.app/thank-you
+https://example.com/thank-you
 פתרונות יצירתיים - תודה שפניתם אלינו
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://-2df2e783.zappy5.app/privacy
+https://example.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://-2df2e783.zappy5.app/terms
+https://example.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://-2df2e783.zappy5.app/accessibility
+https://example.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -51,8 +51,8 @@ Information about WCAG compliance and accessibility features.
 - (No contact details configured yet.)
 
 ### Contact form
-- URL: https://-2df2e783.zappy5.app/contact
-- Endpoint: https://-2df2e783.zappy5.app/api/email/contact-form
+- URL: https://example.com/contact
+- Endpoint: https://example.com/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -82,6 +82,6 @@ Construction & Renovation
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://-2df2e783.zappy5.app/sitemap.xml
-- Robots: https://-2df2e783.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://-2df2e783.zappy5.app/llms-full.txt
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
