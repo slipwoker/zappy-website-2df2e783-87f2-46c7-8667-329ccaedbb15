@@ -1,0 +1,87 @@
+# פתרונות יצירתיים — Generative Engine Optimization Map
+
+> A comprehensive construction and renovation company offering a full spectrum of building services under one roof. The company handles residential projects (apartments and homes), commercial properties, and specialized trades including electrical work, plumbing, structural engineering, painting, high-altitude work, and fire safety permits for businesses. The brand positions itself as a one-stop-shop for all construction needs, emphasizing breadth of expertise and convenience.
+
+---
+
+## Pages
+
+### בית
+https://-2df2e783.zappy5.app
+מחפשים חברת בנייה ושיפוצים שעושה הכל? מאפס ועד מפתח, אנחנו מתמחים בבנייה, שיפוץ דירה, חשמל, אינסטלציה והיתרי כיבוי אש. לחצו לייעוץ חינם עוד היום!
+
+### שירותים
+https://-2df2e783.zappy5.app/services
+מחשמל ואינסטלציה ועד קונסטרוקציה ושיפוץ חדר רחצה – גלו את סל שירותי הבנייה והשיפוצים המקיף שלנו. מומחיות אמיתית, פרויקט אחד. היכנסו לראות מה אנחנו יכולים לעשות עבורכם!
+
+### פרויקטים
+https://-2df2e783.zappy5.app/projects
+רוצים לראות בנייה ושיפוצים ברמה הגבוהה ביותר? צללו לתיק העבודות שלנו: פרויקטים למגורים, עסקים, עבודות חשמל מורכבות ושיפוצי דירה מעוררי השראה. בואו לקבל רעיונות לפרויקט שלכם!
+
+### אודות
+https://-2df2e783.zappy5.app/about
+פתרונות יצירתיים זה הרבה יותר מחברת בנייה. אנחנו צוות של מהנדסי קונסטרוקציה, חשמלאים, אינסטלטורים ומומחי כיבוי אש תחת קורת גג אחת. קראו איך אנחנו הופכים כל פרויקט לחוויה חלקה ובטוחה.
+
+### צור קשר
+https://-2df2e783.zappy5.app/contact
+מוכנים להתחיל בבנייה, בשיפוץ הדירה או בכל פרויקט אחר? דברו איתנו עוד היום! בין אם אתם צריכים חשמלאי, אינסטלטור או ליווי הנדסי מלא – אנחנו כאן. צרו קשר והפכו את החזון למציאות.
+
+### תודה שפניתם אלינו
+https://-2df2e783.zappy5.app/thank-you
+פתרונות יצירתיים - תודה שפניתם אלינו
+
+## Legal & Policy
+
+### Privacy Policy
+https://-2df2e783.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-2df2e783.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-2df2e783.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://-2df2e783.zappy5.app/contact
+- Endpoint: https://-2df2e783.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text)
+  - `email` (email)
+  - `phone` (tel)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About פתרונות יצירתיים
+A comprehensive construction and renovation company offering a full spectrum of building services under one roof. The company handles residential projects (apartments and homes), commercial properties, and specialized trades including electrical work, plumbing, structural engineering, painting, high-altitude work, and fire safety permits for businesses. The brand positions itself as a one-stop-shop for all construction needs, emphasizing breadth of expertise and convenience.
+
+## Target Audience
+- משפחות המשפצות את ביתן
+- משקיעי נדל"ן
+- רוכשי בתים בפעם הראשונה
+- בעלי נכסים מסחריים
+
+## Industry
+Construction & Renovation
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-2df2e783.zappy5.app/sitemap.xml
+- Robots: https://-2df2e783.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-2df2e783.zappy5.app/llms-full.txt
