@@ -7469,6 +7469,47 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   background: var(--primary, var(--primary-color, var(--primary, #087E8B))) !important;
   color: #FFFFFF !important;
 }
+
+.index-trust-band-section__container .before-after-toggle-row {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  margin-top: 20px !important;
+}
+
+.index-trust-band-section__container .before-after-btn {
+  padding: 10px 28px !important;
+  border: 2px solid var(--primary, var(--primary-color, var(--primary, #087E8B))) !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  color: var(--primary, var(--primary-color, var(--primary, #087E8B))) !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+}
+
+.index-trust-band-section__container .before-after-btn.active-btn {
+  background: var(--primary, var(--primary-color, var(--primary, #087E8B))) !important;
+  color: #fff !important;
+}
+
+#before-after-frame {
+  max-width: 700px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.index-trust-band-section .before-after-btn:hover {
+  background: var(--primary, var(--primary-color, var(--primary, #087E8B))) !important;
+  color: #fff !important;
+}
+
+.index-trust-band-section #before-after-frame {
+  max-width: 700px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
