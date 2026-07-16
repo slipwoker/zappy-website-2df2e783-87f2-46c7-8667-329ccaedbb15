@@ -7410,6 +7410,31 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 ._access-icon {
   display: flex !important;
 }
+
+.index-trust-band-section__image-label {
+  padding: 8px 20px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.35) !important;
+}
+
+.index-trust-band-section__comparison-frame {
+  border-radius: 12px !important;
+}
+
+.index-trust-band-section__image-label--before {
+  background: var(--accent, var(--accent-color, var(--accent, #C49A4A))) !important;
+  color: #1A2B3C !important;
+  border-radius: 8px !important;
+}
+
+.index-trust-band-section__image-label--after {
+  background: var(--primary, var(--primary-color, var(--primary, #087E8B))) !important;
+  color: #FFFFFF !important;
+  border-radius: 8px !important;
+}
+
+.index-trust-band-section__image-label {
+  font-weight: 700 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
