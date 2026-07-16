@@ -7684,6 +7684,19 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   padding: 10px 24px;
   white-space: nowrap;
 }
+
+#index-trust-band-section.index-trust-band-section {
+  padding: 48px 16px 48px !important;
+}
+
+#index-trust-band-section .index-trust-band-section__proof-grid {
+  margin-bottom: 24px !important;
+}
+
+#index-trust-band-section > h3 {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
