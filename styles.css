@@ -7672,6 +7672,18 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   padding-left: 48px !important;
   padding-right: 48px !important;
 }
+
+.index-trust-band-section__before-after .before-after-banner {
+  gap: 8px;
+}
+
+.index-trust-band-section__before-after .before-after-banner__label {
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 18px;
+  padding: 10px 24px;
+  white-space: nowrap;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
