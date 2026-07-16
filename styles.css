@@ -7587,6 +7587,21 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   height: 100% !important;
   object-fit: cover !important;
 }
+
+.index-trust-band-section__before-after {
+  max-width: 600px !important;
+  margin: 0 auto 32px auto !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.index-trust-band-section__before-after img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  aspect-ratio: 16 / 9;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
