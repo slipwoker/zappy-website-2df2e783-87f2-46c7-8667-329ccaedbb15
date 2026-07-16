@@ -7511,6 +7511,20 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.index-trust-band-section .index-trust-band-section__proof-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 16px !important;
+  direction: rtl;
+}
+
+@media (max-width: 768px) {
+.index-trust-band-section .index-trust-band-section__proof-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 12px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
