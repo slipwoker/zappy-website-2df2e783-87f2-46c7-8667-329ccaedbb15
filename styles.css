@@ -2892,14 +2892,15 @@ main { flex: 1 0 auto; }
 }
 
 .index-trust-band-section__image-label--before {
-  left: 16px;
-  right: auto;
+  left: auto;
+  right: 12px;
 }
 
 .index-trust-band-section__image-label--after {
-  right: 16px;
+  right: 12px;
   left: auto;
-  background: rgba(8, 126, 139, 0.85);
+  background: var(--primary, #087E8B);
+  color: var(--text-light);
 }
 
 .index-trust-band-section__comparison-divider {
