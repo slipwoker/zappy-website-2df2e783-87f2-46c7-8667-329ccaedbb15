@@ -7435,6 +7435,34 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-trust-band-section__image-label {
   font-weight: 700 !important;
 }
+
+.index-trust-band-section__comparison-image-wrapper {
+  overflow: visible !important;
+}
+
+.index-trust-band-section__image-label {
+  position: absolute !important;
+  bottom: 16px !important;
+  z-index: 5 !important;
+  padding: 8px 20px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.35) !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+}
+
+.index-trust-band-section__image-label--before {
+  right: 16px !important;
+  left: auto !important;
+  background: var(--accent, var(--accent-color, var(--accent, #C49A4A))) !important;
+  color: #1A2B3C !important;
+}
+
+.index-trust-band-section__image-label--after {
+  right: 16px !important;
+  left: auto !important;
+  background: var(--primary, var(--primary-color, var(--primary, #087E8B))) !important;
+  color: #FFFFFF !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
