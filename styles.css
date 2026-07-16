@@ -7697,6 +7697,10 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   margin-top: 8px !important;
   margin-bottom: 8px !important;
 }
+
+#index-trust-band-section h3 {
+  color: #FFFFFF !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
