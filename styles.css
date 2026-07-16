@@ -2802,7 +2802,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-trust-band-section__proof-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.35);
   border: 1px solid var(--border-dark, #3A424A);
   border-radius: var(--radius-card, 4px);
   padding: var(--spacing-card-padding, 32px);
@@ -2811,6 +2811,7 @@ main { flex: 1 0 auto; }
   align-items: flex-start;
   text-align: right;
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .index-trust-band-section__proof-card:hover {
