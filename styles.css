@@ -7535,6 +7535,19 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   gap: 24px !important;
 }
 }
+
+.index-trust-band-section__before-after {
+  max-width: 600px !important;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.index-trust-band-section__before-after img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
