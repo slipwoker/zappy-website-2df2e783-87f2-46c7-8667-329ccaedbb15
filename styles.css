@@ -7709,6 +7709,12 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 #index-trust-band-section h2.index-trust-band-section__heading {
   color: #FFFFFF !important;
 }
+
+.index-hero-section .display-xl,
+.index-hero-section .hero-subtitle,
+.index-hero-section .hero-eyebrow {
+  color: #FFFFFF !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
