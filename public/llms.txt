@@ -30,9 +30,9 @@ https://example.com/contact
 https://example.com/thank-you
 פתרונות יצירתיים - תודה שפניתם אלינו
 
-### היתרי כיבוי אש לעסקים
-https://example.com/fire-permits
-פתרונות יצירתיים - היתרי כיבוי אש לעסקים
+### היתרי כיבוי אש לעסקים ומסחר
+https://example.com/business-fire-safety-permits
+פתרונות יצירתיים - היתרי כיבוי אש לעסקים ומסחר
 
 ## Legal & Policy
 
