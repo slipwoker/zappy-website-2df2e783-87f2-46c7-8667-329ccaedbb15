@@ -7,45 +7,45 @@
 ## Pages
 
 ### בית
-https://pitronot-yetsiratiyim.zappy5.app
+https://innovativesolutions.co.il
 מחפשים חברת בנייה ושיפוצים שעושה הכל? מאפס ועד מפתח, אנחנו מתמחים בבנייה, שיפוץ דירה, חשמל, אינסטלציה והיתרי כיבוי אש. לחצו לייעוץ חינם עוד היום!
 
 ### שירותים
-https://pitronot-yetsiratiyim.zappy5.app/services
+https://innovativesolutions.co.il/services
 מחשמל ואינסטלציה ועד קונסטרוקציה ושיפוץ חדר רחצה – גלו את סל שירותי הבנייה והשיפוצים המקיף שלנו. מומחיות אמיתית, פרויקט אחד. היכנסו לראות מה אנחנו יכולים לעשות עבורכם!
 
 ### פרויקטים
-https://pitronot-yetsiratiyim.zappy5.app/projects
+https://innovativesolutions.co.il/projects
 רוצים לראות בנייה ושיפוצים ברמה הגבוהה ביותר? צללו לתיק העבודות שלנו: פרויקטים למגורים, עסקים, עבודות חשמל מורכבות ושיפוצי דירה מעוררי השראה. בואו לקבל רעיונות לפרויקט שלכם!
 
 ### אודות
-https://pitronot-yetsiratiyim.zappy5.app/about
+https://innovativesolutions.co.il/about
 פתרונות יצירתיים זה הרבה יותר מחברת בנייה. אנחנו צוות של מהנדסי קונסטרוקציה, חשמלאים, אינסטלטורים ומומחי כיבוי אש תחת קורת גג אחת. קראו איך אנחנו הופכים כל פרויקט לחוויה חלקה ובטוחה.
 
 ### צור קשר
-https://pitronot-yetsiratiyim.zappy5.app/contact
+https://innovativesolutions.co.il/contact
 מוכנים להתחיל בבנייה, בשיפוץ הדירה או בכל פרויקט אחר? דברו איתנו עוד היום! בין אם אתם צריכים חשמלאי, אינסטלטור או ליווי הנדסי מלא – אנחנו כאן. צרו קשר והפכו את החזון למציאות.
 
 ### תודה שפניתם אלינו
-https://pitronot-yetsiratiyim.zappy5.app/thank-you
+https://innovativesolutions.co.il/thank-you
 פתרונות יצירתיים - תודה שפניתם אלינו
 
 ### היתרי כיבוי אש לעסקים ומסחר
-https://pitronot-yetsiratiyim.zappy5.app/business-fire-safety-permits
+https://innovativesolutions.co.il/business-fire-safety-permits
 פתרונות יצירתיים - היתרי כיבוי אש לעסקים ומסחר
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://pitronot-yetsiratiyim.zappy5.app/privacy
+https://innovativesolutions.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://pitronot-yetsiratiyim.zappy5.app/terms
+https://innovativesolutions.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://pitronot-yetsiratiyim.zappy5.app/accessibility
+https://innovativesolutions.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -57,8 +57,8 @@ Information about WCAG compliance and accessibility features.
 - Phone (tel): tel:0528833123
 
 ### Contact form
-- URL: https://pitronot-yetsiratiyim.zappy5.app/contact
-- Endpoint: https://pitronot-yetsiratiyim.zappy5.app/api/email/contact-form
+- URL: https://innovativesolutions.co.il/contact
+- Endpoint: https://innovativesolutions.co.il/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -88,6 +88,6 @@ Construction & Renovation
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://pitronot-yetsiratiyim.zappy5.app/sitemap.xml
-- Robots: https://pitronot-yetsiratiyim.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://pitronot-yetsiratiyim.zappy5.app/llms-full.txt
+- Sitemap (XML): https://innovativesolutions.co.il/sitemap.xml
+- Robots: https://innovativesolutions.co.il/robots.txt
+- Flattened page text (for LLMs): https://innovativesolutions.co.il/llms-full.txt
