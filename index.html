@@ -1583,36 +1583,213 @@
 
 
 
+
+
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
-.index-hero-section { position: relative; width: 100%; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; background-color: var(--bg-dark); direction: rtl; } .index-hero-section .index-hero-section-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; background-size: cover; background-position: center; background-repeat: no-repeat; } .index-hero-section .index-hero-section-overlay {
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  direction: rtl;
+  padding-bottom: 80px;
+}
+
+.index-hero-section__bg-wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
+}
+
+.index-hero-section__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.9);
+}
+
+.index-hero-section__scrim {
+  position: absolute;
+  inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.92) 100%);
   pointer-events: none;
-} .index-hero-section .index-hero-section-content { position: relative; z-index: 10; width: 100%; max-width: 1200px; margin: 0 auto; padding: 120px 24px 60px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; } .index-hero-section .index-hero-section-text-group { display: flex; flex-direction: column; align-items: center; gap: 24px; } .index-hero-section .index-hero-section-headline {
+  background-image:
+    radial-gradient(ellipse at 10% 50%, rgba(0,0,0,0.15) 0%, transparent 70%),
+    linear-gradient(to left, rgba(15,28,42,0.78) 0%, rgba(15,28,42,0.55) 45%, rgba(15,28,42,0.25) 100%);
+}
+
+.index-hero-section__overlay {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.index-hero-section__content {
+  max-width: 680px;
+  text-align: start;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.65), 0 8px 24px rgba(0,0,0,0.45);
+}
+
+.index-hero-section__decorative-bar {
+  width: 72px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent) 0%, rgba(201,168,76,0.4) 100%);
+  margin-bottom: 28px;
+  border-radius: 4px;
+  box-shadow: 0 0 16px rgba(201,168,76,0.45);
+}
+
+.index-hero-section__headline {
   font-size: 3rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  line-height: 1.2;
+  line-height: 1.15;
   color: var(--text-light);
-  text-shadow: 0 4px 24px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.7);
-  max-width: 900px;
-  margin: 0;
-} .index-hero-section .index-hero-section-subtitle {
+  margin-bottom: 20px;
+  text-shadow: inherit;
+}
+
+.index-hero-section__subtitle {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.6;
   color: var(--text-light);
-  text-shadow: 0 3px 18px rgba(0,0,0,0.7), 0 1px 6px rgba(0,0,0,0.6);
-  max-width: 700px;
-  margin: 0;
-  opacity: 0.9;
-} .index-hero-section .index-hero-section-cta-group { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px; } .index-hero-section .index-hero-section-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 32px; border-radius: 6px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); white-space: nowrap; } .index-hero-section .index-hero-section-btn-primary { background: var(--accent); color: var(--text-dark); border: none; box-shadow: 0 8px 32px rgba(0,0,0,0.25); } .index-hero-section .index-hero-section-btn-primary:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); } .index-hero-section .index-hero-section-btn-secondary { background: transparent; color: var(--text-light); border: 2px solid var(--text-light); } .index-hero-section .index-hero-section-btn-secondary:hover { background: rgba(255,255,255,0.1); transform: translateY(-4px); } .index-hero-section .index-hero-section-decorative-motif { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 10; width: 80px; height: 4px; pointer-events: none; } .index-hero-section .index-hero-section-decorative-motif svg { display: block; width: 100%; height: 100%; } .index-hero-section .index-hero-section-logo-mark { position: absolute; top: 32px; inset-inline-end: 32px; z-index: 10; width: 48px; height: 48px; opacity: 0.6; pointer-events: none; } .index-hero-section .index-hero-section-logo-mark svg { display: block; width: 100%; height: 100%; } @media (max-width: 768px) { .index-hero-section .index-hero-section-content { padding: 100px 16px 40px; gap: 24px; } .index-hero-section .index-hero-section-headline { font-size: 2.2rem; } .index-hero-section .index-hero-section-subtitle { font-size: 1.1rem; } .index-hero-section .index-hero-section-cta-group { flex-direction: column; width: 100%; } .index-hero-section .index-hero-section-btn { width: 100%; text-align: center; } .index-hero-section .index-hero-section-logo-mark { top: 16px; inset-inline-end: 16px; width: 36px; height: 36px; } .index-hero-section .index-hero-section-decorative-motif { bottom: 24px; } }
+  opacity: 0.95;
+  margin-bottom: 36px;
+  text-shadow: inherit;
+  max-width: 600px;
+}
+
+.index-hero-section__cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.index-hero-section__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-shadow: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.index-hero-section__cta--primary {
+  background: var(--accent);
+  color: #FFFFFF;
+  border-color: var(--accent);
+}
+
+.index-hero-section__cta--primary:hover {
+  background: #D4A84E;
+  border-color: #D4A84E;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(201,168,76,0.35);
+}
+
+.index-hero-section__cta--secondary {
+  background: transparent;
+  color: var(--text-light);
+  border-color: var(--text-light);
+  backdrop-filter: blur(2px);
+}
+
+.index-hero-section__cta--secondary:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.index-hero-section__bottom-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.index-hero-section__bottom-divider svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+    padding-bottom: 60px;
+    align-items: flex-end;
+  }
+
+  .index-hero-section__overlay {
+    padding: 100px 16px 32px;
+    justify-content: flex-end;
+  }
+
+  .index-hero-section__headline {
+    font-size: 2.2rem;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .index-hero-section__subtitle {
+    font-size: 1.1rem;
+    line-height: 1.55;
+    margin-bottom: 28px;
+    max-width: 100%;
+  }
+
+  .index-hero-section__decorative-bar {
+    width: 56px;
+    height: 4px;
+    margin-bottom: 20px;
+  }
+
+  .index-hero-section__cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .index-hero-section__cta {
+    justify-content: center;
+    text-align: center;
+    padding: 14px 20px;
+  }
+
+  .index-hero-section__bottom-divider {
+    height: 60px;
+  }
+}
 /* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
 .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
 @media (max-width: 1024px) {
@@ -1675,6 +1852,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 </style>
     <link rel="stylesheet" href="/styles.css">
     <script>window.ZAPPY_WEBSITE_ID = "2df2e783-87f2-46c7-8667-329ccaedbb15"; window.ZAPPY_API_BASE = "https://api.zappy5.com";</script>
+    <link rel="preload" as="image" href="/assets/image-construction-renovation-section-hero-index-hero-image-1.webp" fetchpriority="high">
 
     <style id="zappy-dropdown-submenu-styles">
       /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
@@ -2251,7 +2429,34 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 </script>
   
   <main id="main">
-    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="index-hero-section"><div class="index-hero-section-bg" style="background-image: url('assets/image-construction-renovation-section-case-studies-index-case-studies-image-3.webp?t=1784460229112'); background-size: cover; background-position: center;"></div><div class="index-hero-section-overlay"></div><div class="index-hero-section-content"><div class="index-hero-section-text-group"><h1 class="index-hero-section-headline">מחברי חזון לקרקע, ומתכנית למציאות – הבית המקצועי שלך לכל שלבי הבנייה</h1><h3 class="index-hero-section-subtitle">פתרונות יצירתיים – כל שירותי הבנייה והשיפוצים תחת קורת גג אחת</h3></div><div class="index-hero-section-cta-group"><a href="#contact" class="index-hero-section-btn index-hero-section-btn-primary">צרו קשר עכשיו</a><a href="#services" class="index-hero-section-btn index-hero-section-btn-secondary">השירותים שלנו</a></div></div><div class="index-hero-section-decorative-motif" aria-hidden="true"><svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 60 4" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="60" height="4" fill="var(--accent)"></rect></svg></div><div class="index-hero-section-logo-mark" aria-hidden="true"><svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M8 44V16L24 4L40 16V44H32V28H16V44H8Z" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"></path><rect x="14" y="30" width="20" height="14" fill="none" stroke="var(--accent)" stroke-width="2"></rect><line x1="18" y1="24" x2="30" y2="24" stroke="var(--accent)" stroke-width="2"></line><line x1="20" y1="20" x2="28" y2="20" stroke="var(--accent)" stroke-width="2"></line></svg></div></section>
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" id="index-hero-section">
+  <div class="index-hero-section__bg-wrapper">
+    <img loading="eager" fetchpriority="high" data-hero-bg="true" data-context="A dramatic, wide-angle architectural shot of a modern luxury home under construction or renovation in Israel. The scene shows exposed steel beams, concrete pillars, and scaffolding, with warm sunset light casting long shadows and golden highlights. The composition emphasizes height, structure, and the scale of construction work. The background features a clear sky or soft urban skyline. The overall mood is inspiring, credible, and forward-looking — perfect for a construction and renovation company hero banner." width="1200" height="600" src="/assets/image-construction-renovation-section-hero-index-hero-image-1.webp" alt="פרויקט בנייה ושיפוץ יוקרתי בשקיעה" class="index-hero-section__bg-image" data-preserve-bg="0" decoding="async">
+  </div>
+  <div class="index-hero-section__scrim" aria-hidden="true"></div>
+  <div class="index-hero-section__overlay">
+    <div class="index-hero-section__content">
+      <div class="index-hero-section__decorative-bar" aria-hidden="true"></div>
+      <h1 class="index-hero-section__headline">פתרונות יצירתיים – הבית שלך בידיים הטובות ביותר</h1>
+      <h3 class="index-hero-section__subtitle">קבלנות, שיפוצים, חשמל, אינסטלציה, צבע, עבודות בגובה והיתרי אש — הכל תחת קורת גג אחת, בשקיפות ובמקצועיות ללא פשרות.</h3>
+      <div class="index-hero-section__cta-group">
+        <a href="#contact" class="index-hero-section__cta index-hero-section__cta--primary">
+          <span style="color: #1A1A1A !important">צרו קשר עכשיו</span>
+          <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </a>
+        <a href="#services" class="index-hero-section__cta index-hero-section__cta--secondary">
+          <span>השירותים שלנו</span>
+          <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="index-hero-section__bottom-divider" aria-hidden="true">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,20 Q50,15 100,22 T200,18 Q250,22 300,15 T400,20 Q450,18 500,22 T600,15 Q650,20 700,18 T800,22 Q850,15 900,20 T1000,18 Q1050,22 1100,15 T1200,20 L1200,80 Z" fill="var(--bg-light)"></path>
+    </svg>
+  </div>
+</section>
 
 <section class="index-services-section" data-layout-spec="בית-services" id="zappy-section-1784447083088-396" data-zappy-content-align="top-center">
   <div class="services-container" data-zappy-align-target="true">
