@@ -7715,6 +7715,79 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-hero-section .hero-eyebrow {
   color: #FFFFFF !important;
 }
+
+.index-trust-band-section .index-trust-band-section__before-after {
+  margin-bottom: 44px;
+  position: relative;
+  padding-bottom: 36px;
+}
+
+.index-trust-band-section .index-trust-band-section__before-after::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(196, 154, 74, 0.3) 10%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 50%, rgba(196, 154, 74, 0.3) 90%, transparent 100%);
+}
+
+.index-trust-band-section .index-trust-band-section__before-after::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 9px;
+  background: var(--accent, var(--accent-color, var(--accent, #C49A4A)));
+  border-radius: 2px;
+}
+
+.index-trust-band-section .index-trust-band-section__before-after {
+  border-left: 1px solid rgba(196, 154, 74, 0.15);
+  border-right: 1px solid rgba(196, 154, 74, 0.15);
+  border-top: 1px solid rgba(196, 154, 74, 0.15);
+  border-radius: 8px 8px 0 0;
+  padding: 20px 20px 36px 20px;
+  background: rgba(196, 154, 74, 0.03);
+}
+
+.index-trust-band-section .index-trust-band-section__before-after {
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 28px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  padding: 0 0 28px 0;
+}
+
+.index-trust-band-section .index-trust-band-section__before-after::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 20%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 80%, transparent 100%);
+  border-radius: 1px;
+}
+
+.index-trust-band-section .index-trust-band-section__before-after::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 12px;
+  background: var(--accent, var(--accent-color, var(--accent, #C49A4A)));
+  border-radius: 3px;
+  opacity: 0.85;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
