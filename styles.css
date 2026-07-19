@@ -7790,9 +7790,7 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 
 .index-trust-band-section .before-after-banner {
-  margin-bottom: 24px;
-  position: relative;
-  padding-bottom: 24px;
+
 }
 
 .index-trust-band-section .before-after-banner::after {
@@ -7804,6 +7802,7 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   height: 2px;
   background: linear-gradient(90deg, transparent 0%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 20%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 80%, transparent 100%);
   border-radius: 1px;
+  display: none;
 }
 
 .index-trust-band-section .before-after-banner::after {
@@ -7812,21 +7811,21 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 
 .index-trust-band-section .index-trust-band-section__container {
-  border-top: 1px solid rgba(8, 126, 139, 0.15);
-  border-bottom: 1px solid rgba(8, 126, 139, 0.15);
-  padding-top: 40px;
-  padding-bottom: 48px;
+  border-top: none;
+  border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 0;
   position: relative;
-  background: linear-gradient(180deg, rgba(244, 246, 247, 0.4) 0%, rgba(255, 255, 255, 1) 100%);
+  background: none;
 }
 
 .index-case-studies-section .index-case-studies-container {
-  border-top: 1px solid rgba(8, 126, 139, 0.15);
-  border-bottom: 1px solid rgba(8, 126, 139, 0.15);
-  padding-top: 40px;
-  padding-bottom: 48px;
+  border-top: none;
+  border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 0;
   position: relative;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(244, 246, 247, 0.4) 100%);
+  background: none;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
