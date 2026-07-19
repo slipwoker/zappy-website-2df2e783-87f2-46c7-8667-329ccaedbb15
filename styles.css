@@ -8123,6 +8123,25 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   transform: translateY(-4px);
   border-color: rgba(8, 126, 139, 0.18);
 }
+
+.index-trust-band-section .index-trust-band-section__before-after {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+}
+
+.index-trust-band-section .index-trust-band-section__before-after::after {
+  content: none;
+  display: none;
+}
+
+.index-trust-band-section .index-trust-band-section__before-after::before {
+  content: none;
+  display: none;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
