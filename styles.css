@@ -8383,7 +8383,11 @@ nav.navbar .sub-menu li a:hover { color: #163350 !important; background-color: r
 }
 
 .index-cta-section .index-cta-section__btn--primary svg {
-  transform: scaleX(-1);
+
+}
+
+.index-cta-section .index-cta-section__btn--primary svg {
+
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
