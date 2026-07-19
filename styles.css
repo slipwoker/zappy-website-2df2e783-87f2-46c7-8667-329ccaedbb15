@@ -7788,6 +7788,23 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   border-radius: 3px;
   opacity: 0.85;
 }
+
+.index-trust-band-section .before-after-banner {
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.index-trust-band-section .before-after-banner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 20%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 80%, transparent 100%);
+  border-radius: 1px;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
