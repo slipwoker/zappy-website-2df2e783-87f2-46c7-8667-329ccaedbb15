@@ -1585,209 +1585,242 @@
 
 
 
+
+
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
 .index-hero-section {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F4F7 100%);
+  color: var(--text-dark);
+  padding: 120px 24px 80px;
   position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  overflow: visible;
   direction: rtl;
-  padding-bottom: 80px;
+  min-height: auto;
 }
 
-.index-hero-section__bg-wrapper {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.index-hero-section__bg-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: brightness(0.9);
-}
-
-.index-hero-section__scrim {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background-image:
-    radial-gradient(ellipse at 10% 50%, rgba(0,0,0,0.15) 0%, transparent 70%),
-    linear-gradient(to left, rgba(15,28,42,0.78) 0%, rgba(15,28,42,0.55) 45%, rgba(15,28,42,0.25) 100%);
-}
-
-.index-hero-section__overlay {
-  position: relative;
-  z-index: 10;
-  width: 100%;
+.index-hero-section .index-hero-section-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 160px 24px 40px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
 }
 
-.index-hero-section__content {
-  max-width: 680px;
-  text-align: start;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.65), 0 8px 24px rgba(0,0,0,0.45);
+/* LEFT: Image wrapper (decorative, compact) */
+.index-hero-section .index-hero-section-image-wrapper {
+  flex: 0 0 32%;
+  max-width: 380px;
+  position: relative;
+  z-index: 1;
 }
 
-.index-hero-section__decorative-bar {
-  width: 72px;
-  height: 5px;
-  background: linear-gradient(90deg, var(--accent) 0%, rgba(201,168,76,0.4) 100%);
-  margin-bottom: 28px;
+.index-hero-section .index-hero-section-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
   border-radius: 4px;
-  box-shadow: 0 0 16px rgba(201,168,76,0.45);
+  box-shadow: 0 8px 30px rgba(28, 60, 90, 0.15);
+  border: none;
 }
 
-.index-hero-section__headline {
+/* Brand mark decoration */
+.index-hero-section .index-hero-section-brand-mark {
+  position: absolute;
+  bottom: -16px;
+  inset-inline-start: -16px;
+  width: 48px;
+  height: 48px;
+  color: var(--primary);
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 2;
+  background: var(--bg-light);
+  border-radius: 2px;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.index-hero-section .index-hero-section-brand-mark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* RIGHT: Text content */
+.index-hero-section .index-hero-section-content {
+  flex: 1 1 auto;
+  text-align: right;
+  direction: rtl;
+}
+
+.index-hero-section .index-hero-section-headline {
   font-size: 3rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.15;
-  color: var(--text-light);
-  margin-bottom: 20px;
-  text-shadow: inherit;
+  color: var(--primary);
+  margin: 0 0 20px 0;
+  text-align: right;
 }
 
-.index-hero-section__subtitle {
+.index-hero-section .index-hero-section-accent-bar {
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  margin: 0 0 24px 0;
+  border-radius: 2px;
+}
+
+.index-hero-section .index-hero-section-subtitle {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--text-light);
-  opacity: 0.95;
-  margin-bottom: 36px;
-  text-shadow: inherit;
-  max-width: 600px;
+  color: var(--text-muted);
+  margin: 0 0 32px 0;
+  max-width: 540px;
+  text-align: right;
 }
 
-.index-hero-section__cta-group {
+.index-hero-section .index-hero-section-ctas {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  flex-direction: row;
   align-items: center;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.index-hero-section__cta {
+.index-hero-section .index-hero-section-btn-primary {
+  background: var(--accent);
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 14px 28px;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 1rem;
+  cursor: pointer;
   text-decoration: none;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  border: 2px solid transparent;
-  text-shadow: none;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 12px rgba(201, 168, 76, 0.25);
 }
 
-.index-hero-section__cta--primary {
-  background: var(--accent);
-  color: #FFFFFF;
-  border-color: var(--accent);
+.index-hero-section .index-hero-section-btn-primary:hover {
+  background: #B08A3A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(201, 168, 76, 0.35);
 }
 
-.index-hero-section__cta--primary:hover {
-  background: #D4A84E;
-  border-color: #D4A84E;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(201,168,76,0.35);
-}
-
-.index-hero-section__cta--secondary {
+.index-hero-section .index-hero-section-btn-secondary {
   background: transparent;
-  color: var(--text-light);
-  border-color: var(--text-light);
-  backdrop-filter: blur(2px);
+  color: var(--primary);
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: 2px solid var(--primary);
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.index-hero-section__cta--secondary:hover {
-  background: rgba(255,255,255,0.12);
-  border-color: var(--accent);
-  color: var(--accent);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+.index-hero-section .index-hero-section-btn-secondary:hover {
+  background: rgba(26, 60, 94, 0.05);
+  transform: translateY(-2px);
 }
 
-.index-hero-section__bottom-divider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.index-hero-section__bottom-divider svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
+/* Responsive: Mobile */
 @media (max-width: 768px) {
   .index-hero-section {
-    min-height: 100vh;
-    padding-bottom: 60px;
-    align-items: flex-end;
+    padding: 100px 16px 60px;
   }
 
-  .index-hero-section__overlay {
-    padding: 100px 16px 32px;
-    justify-content: flex-end;
+  .index-hero-section .index-hero-section-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: right;
   }
 
-  .index-hero-section__headline {
+  .index-hero-section .index-hero-section-image-wrapper {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    order: -1; /* Image on top on mobile */
+  }
+
+  .index-hero-section .index-hero-section-image {
+    aspect-ratio: 4 / 3;
+    max-height: 320px;
+  }
+
+  .index-hero-section .index-hero-section-brand-mark {
+    bottom: -12px;
+    inset-inline-start: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .index-hero-section .index-hero-section-content {
+    text-align: right;
+  }
+
+  .index-hero-section .index-hero-section-headline {
     font-size: 2.2rem;
-    line-height: 1.25;
-    margin-bottom: 16px;
+    line-height: 1.2;
   }
 
-  .index-hero-section__subtitle {
+  .index-hero-section .index-hero-section-subtitle {
     font-size: 1.1rem;
-    line-height: 1.55;
-    margin-bottom: 28px;
     max-width: 100%;
   }
 
-  .index-hero-section__decorative-bar {
-    width: 56px;
-    height: 4px;
-    margin-bottom: 20px;
+  .index-hero-section .index-hero-section-ctas {
+    justify-content: flex-start;
+    gap: 12px;
   }
 
-  .index-hero-section__cta-group {
+  .index-hero-section .index-hero-section-btn-primary,
+  .index-hero-section .index-hero-section-btn-secondary {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .index-hero-section {
+    padding: 100px 16px 40px;
+  }
+
+  .index-hero-section .index-hero-section-headline {
+    font-size: 1.8rem;
+  }
+
+  .index-hero-section .index-hero-section-subtitle {
+    font-size: 1rem;
+  }
+
+  .index-hero-section .index-hero-section-ctas {
     flex-direction: column;
     align-items: stretch;
-    width: 100%;
+    gap: 10px;
   }
 
-  .index-hero-section__cta {
-    justify-content: center;
+  .index-hero-section .index-hero-section-btn-primary,
+  .index-hero-section .index-hero-section-btn-secondary {
     text-align: center;
-    padding: 14px 20px;
-  }
-
-  .index-hero-section__bottom-divider {
-    height: 60px;
+    justify-content: center;
   }
 }
 /* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
@@ -2429,32 +2462,35 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 </script>
   
   <main id="main">
-    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" id="index-hero-section">
-  <div class="index-hero-section__bg-wrapper">
-    <img loading="eager" fetchpriority="high" data-hero-bg="true" data-context="A dramatic, wide-angle architectural shot of a modern luxury home under construction or renovation in Israel. The scene shows exposed steel beams, concrete pillars, and scaffolding, with warm sunset light casting long shadows and golden highlights. The composition emphasizes height, structure, and the scale of construction work. The background features a clear sky or soft urban skyline. The overall mood is inspiring, credible, and forward-looking — perfect for a construction and renovation company hero banner." width="1200" height="600" src="/assets/image-construction-renovation-section-hero-index-hero-image-1.webp" alt="פרויקט בנייה ושיפוץ יוקרתי בשקיעה" class="index-hero-section__bg-image" data-preserve-bg="0" decoding="async">
-  </div>
-  <div class="index-hero-section__scrim" aria-hidden="true"></div>
-  <div class="index-hero-section__overlay">
-    <div class="index-hero-section__content">
-      <div class="index-hero-section__decorative-bar" aria-hidden="true"></div>
-      <h1 class="index-hero-section__headline">פתרונות יצירתיים – הבית שלך בידיים הטובות ביותר</h1>
-      <h3 class="index-hero-section__subtitle">קבלנות, שיפוצים, חשמל, אינסטלציה, צבע, עבודות בגובה והיתרי אש — הכל תחת קורת גג אחת, בשקיפות ובמקצועיות ללא פשרות.</h3>
-      <div class="index-hero-section__cta-group">
-        <a href="#contact" class="index-hero-section__cta index-hero-section__cta--primary">
-          <span style="color: #1A1A1A !important">צרו קשר עכשיו</span>
-          <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </a>
-        <a href="#services" class="index-hero-section__cta index-hero-section__cta--secondary">
-          <span>השירותים שלנו</span>
-          <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </a>
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="side-by-side" id="index-hero-section">
+  <div class="index-hero-section-container">
+    <!-- LEFT: Image (in RTL, image is on the left side) -->
+    <div class="index-hero-section-image-wrapper">
+      <img loading="eager" fetchpriority="high" data-context="Professional construction and renovation company workspace with modern tools, blueprints, and a clean architectural aesthetic, bright natural lighting, warm wood and steel accents" width="600" height="400" src="/assets/image-construction-renovation-section-hero-index-hero-image-1.webp" alt="סביבת עבודה מקצועית של חברת בנייה ושיפוצים" class="index-hero-section-image" decoding="async">
+      <!-- Decorative geometric brand mark -->
+      <div class="index-hero-section-brand-mark" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="20" width="12" height="24" rx="1" fill="currentColor" opacity="0.85"></rect>
+          <rect x="18" y="12" width="12" height="32" rx="1" fill="currentColor" opacity="0.9"></rect>
+          <rect x="32" y="4" width="12" height="40" rx="1" fill="currentColor"></rect>
+          <line x1="2" y1="44" x2="46" y2="44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+          <line x1="10" y1="16" x2="10" y2="20" stroke="currentColor" stroke-width="1"></line>
+          <line x1="24" y1="8" x2="24" y2="12" stroke="currentColor" stroke-width="1"></line>
+          <line x1="38" y1="0" x2="38" y2="4" stroke="currentColor" stroke-width="1"></line>
+        </svg>
       </div>
     </div>
-  </div>
-  <div class="index-hero-section__bottom-divider" aria-hidden="true">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,20 Q50,15 100,22 T200,18 Q250,22 300,15 T400,20 Q450,18 500,22 T600,15 Q650,20 700,18 T800,22 Q850,15 900,20 T1000,18 Q1050,22 1100,15 T1200,20 L1200,80 Z" fill="var(--bg-light)"></path>
-    </svg>
+
+    <!-- RIGHT: Text Content (in RTL, text is on the right side) -->
+    <div class="index-hero-section-content">
+      <h1 class="index-hero-section-headline">פתרונות יצירתיים<br>לבנייה ושיפוץ</h1>
+      <div class="index-hero-section-accent-bar" aria-hidden="true"></div>
+      <h3 class="index-hero-section-subtitle">שירותי בנייה ושיפוצים מקיפים תחת קורת גג אחת – לדירות, בתים פרטיים, עסקים ונכסים מסחריים</h3>
+      <div class="index-hero-section-ctas">
+        <a href="#contact" class="index-hero-section-btn-primary">צרו קשר עכשיו</a>
+        <a href="#services" class="index-hero-section-btn-secondary">לשירותים שלנו</a>
+      </div>
+    </div>
   </div>
 </section>
 
