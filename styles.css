@@ -8373,6 +8373,14 @@ nav.navbar .sub-menu li a:hover { color: #163350 !important; background-color: r
   .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
 }
 
+
+.index-hero-section .index-hero-section__btn--secondary {
+  color: var(--background-color, var(--background, var(--bg-light, #FFFFFF))) !important;
+}
+
+.index-cta-section .index-cta-section__btn--secondary {
+  color: var(--background-color, var(--background, var(--bg-light, #FFFFFF))) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
