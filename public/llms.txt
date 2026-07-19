@@ -7,45 +7,45 @@
 ## Pages
 
 ### בית
-https://example.com
+https://pitronot-yetsiratiyim.zappy5.app
 מחפשים חברת בנייה ושיפוצים שעושה הכל? מאפס ועד מפתח, אנחנו מתמחים בבנייה, שיפוץ דירה, חשמל, אינסטלציה והיתרי כיבוי אש. לחצו לייעוץ חינם עוד היום!
 
 ### שירותים
-https://example.com/services
+https://pitronot-yetsiratiyim.zappy5.app/services
 מחשמל ואינסטלציה ועד קונסטרוקציה ושיפוץ חדר רחצה – גלו את סל שירותי הבנייה והשיפוצים המקיף שלנו. מומחיות אמיתית, פרויקט אחד. היכנסו לראות מה אנחנו יכולים לעשות עבורכם!
 
 ### פרויקטים
-https://example.com/projects
+https://pitronot-yetsiratiyim.zappy5.app/projects
 רוצים לראות בנייה ושיפוצים ברמה הגבוהה ביותר? צללו לתיק העבודות שלנו: פרויקטים למגורים, עסקים, עבודות חשמל מורכבות ושיפוצי דירה מעוררי השראה. בואו לקבל רעיונות לפרויקט שלכם!
 
 ### אודות
-https://example.com/about
+https://pitronot-yetsiratiyim.zappy5.app/about
 פתרונות יצירתיים זה הרבה יותר מחברת בנייה. אנחנו צוות של מהנדסי קונסטרוקציה, חשמלאים, אינסטלטורים ומומחי כיבוי אש תחת קורת גג אחת. קראו איך אנחנו הופכים כל פרויקט לחוויה חלקה ובטוחה.
 
 ### צור קשר
-https://example.com/contact
+https://pitronot-yetsiratiyim.zappy5.app/contact
 מוכנים להתחיל בבנייה, בשיפוץ הדירה או בכל פרויקט אחר? דברו איתנו עוד היום! בין אם אתם צריכים חשמלאי, אינסטלטור או ליווי הנדסי מלא – אנחנו כאן. צרו קשר והפכו את החזון למציאות.
 
 ### תודה שפניתם אלינו
-https://example.com/thank-you
+https://pitronot-yetsiratiyim.zappy5.app/thank-you
 פתרונות יצירתיים - תודה שפניתם אלינו
 
 ### היתרי כיבוי אש לעסקים ומסחר
-https://example.com/business-fire-safety-permits
+https://pitronot-yetsiratiyim.zappy5.app/business-fire-safety-permits
 פתרונות יצירתיים - היתרי כיבוי אש לעסקים ומסחר
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://pitronot-yetsiratiyim.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://pitronot-yetsiratiyim.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://pitronot-yetsiratiyim.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -57,8 +57,8 @@ Information about WCAG compliance and accessibility features.
 - Phone (tel): tel:0528833123
 
 ### Contact form
-- URL: https://example.com/contact
-- Endpoint: https://example.com/api/email/contact-form
+- URL: https://pitronot-yetsiratiyim.zappy5.app/contact
+- Endpoint: https://pitronot-yetsiratiyim.zappy5.app/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -88,6 +88,6 @@ Construction & Renovation
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://example.com/sitemap.xml
-- Robots: https://example.com/robots.txt
-- Flattened page text (for LLMs): https://example.com/llms-full.txt
+- Sitemap (XML): https://pitronot-yetsiratiyim.zappy5.app/sitemap.xml
+- Robots: https://pitronot-yetsiratiyim.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://pitronot-yetsiratiyim.zappy5.app/llms-full.txt
