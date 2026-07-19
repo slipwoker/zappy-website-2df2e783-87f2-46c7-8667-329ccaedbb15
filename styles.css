@@ -8104,278 +8104,41 @@ nav.navbar .sub-menu li a:hover { color: #163350 !important; background-color: r
   font-weight: 700;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
 }
-
-/* ═══════════════════════════════════════════════════════════
-   V2 REGENERATED SECTION CSS (בית-hero)
-   Added: 2026-07-19T10:05:57.783Z
-   ═══════════════════════════════════════════════════════════ */
-/* =============================================
-   HERO SECTION: index-hero-section
-   Page: בית | Type: hero
-   Design: Fullscreen scrim hero with RTL Hebrew content
-   ============================================= */
-
-.index-hero-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 900px;
-  overflow: hidden;
-  background-color: var(--bg-dark); /* Fallback for loading */
-  color: var(--text-light); /* DARK background → LIGHT text */
-  direction: rtl;
-}
-
 /* ---------- Background Image Layer ---------- */
-.index-hero-section__bg-wrapper {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.index-hero-section__bg-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
 /* ---------- Scrim Overlay (Dark Gradient for Readability) ---------- */
-.index-hero-section__scrim {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  /* Stronger scrim on text side (bottom/right in RTL → bottom/right) */
-  background-image: 
-    radial-gradient(ellipse at 70% 90%, rgba(0,0,0,0.52) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.08) 100%),
-    linear-gradient(180deg, rgba(26,43,60,0.35) 0%, rgba(26,43,60,0.55) 50%, rgba(26,43,60,0.7) 100%);
-  background-color: transparent;
-}
 
 /* ---------- Content Overlay ---------- */
-.index-hero-section__content {
-  position: relative;
-  z-index: 10;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* Content to the right (RTL) */
-  padding: 0 5%;
-}
-
-.index-hero-section__container {
-  max-width: 600px;
-  width: 100%;
-  text-align: right;
-  /* Text shadow for extra legibility on photo */
-  text-shadow: 0 2px 12px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.5);
-}
 
 /* ---------- Brand Motif (Geometric Building Logo Mark) ---------- */
-.index-hero-section__brand-mark {
-  margin-bottom: 24px;
-  color: var(--accent);
-  opacity: 0.9;
-  display: inline-block;
-}
-
-.index-hero-section__brand-mark svg {
-  display: block;
-  width: 48px;
-  height: 48px;
-}
 
 /* ---------- Headline (H1) ---------- */
-.index-hero-section__headline {
-  font-family: 'Assistant', 'Heebo', sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-  color: var(--text-light);
-  margin: 0 0 16px 0;
-  text-shadow: inherit;
-}
 
 /* ---------- Subtitle (H3) ---------- */
-.index-hero-section__subtitle {
-  font-family: 'Assistant', 'Noto Sans Hebrew', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgba(255,255,255,0.9);
-  margin: 0 0 24px 0;
-  text-shadow: inherit;
-}
 
 /* ---------- Accent Divider Line (Teal/Gold Underline) ---------- */
-.index-hero-section__accent-line {
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent), #E8D08A);
-  margin: 0 0 32px auto; /* auto margin to align right in RTL */
-  border-radius: 2px;
-}
 
 /* ---------- CTA Button Group ---------- */
-.index-hero-section__cta-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: flex-end; /* RTL alignment */
-}
 
 /* ---------- Shared Button Styles ---------- */
-.index-hero-section__btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'Assistant', 'Heebo', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 14px 28px;
-  border-radius: 100px;
-  text-decoration: none;
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  white-space: nowrap;
-  text-shadow: none; /* Remove text shadow from buttons */
-}
-
-.index-hero-section__btn i {
-  font-size: 0.9em;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 /* Primary (Gold Filled) */
-.index-hero-section__btn--primary {
-  background: var(--accent);
-  color: #FFFFFF;
-  border: none;
-  box-shadow: 0 4px 20px rgba(201,168,76,0.4);
-}
-
-.index-hero-section__btn--primary:hover {
-  background: #D4A84C;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(201,168,76,0.55);
-}
-
-.index-hero-section__btn--primary:hover i {
-  transform: translateX(-4px); /* RTL arrow moves left */
-}
 
 /* Secondary (White Outlined) */
-.index-hero-section__btn--secondary {
-  background: transparent;
-  color: #FFFFFF;
-  border: 2px solid rgba(255,255,255,0.8);
-  backdrop-filter: blur(4px);
-}
-
-.index-hero-section__btn--secondary:hover {
-  background: rgba(255,255,255,0.15);
-  border-color: #FFFFFF;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.2);
-}
-
-.index-hero-section__btn--secondary:hover i {
-  transform: translateX(-4px);
-}
 
 /* =============================================
    RESPONSIVE BREAKPOINTS
    ============================================= */
 
 /* Tablet (768px and below) */
-@media (max-width: 768px) {
-  .index-hero-section {
-    min-height: 550px;
-    max-height: 100vh;
-  }
-
-  .index-hero-section__content {
-    padding: 0 16px;
-    align-items: flex-end;
-    padding-bottom: 48px;
-  }
-
-  .index-hero-section__container {
-    max-width: 100%;
-  }
-
-  .index-hero-section__headline {
-    font-size: 2.2rem;
-    line-height: 1.2;
-    margin-bottom: 12px;
-  }
-
-  .index-hero-section__subtitle {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-
-  .index-hero-section__accent-line {
-    margin-bottom: 24px;
-  }
-
-  .index-hero-section__cta-group {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-  }
-
-  .index-hero-section__btn {
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
-
-  .index-hero-section__brand-mark {
-    margin-bottom: 16px;
-  }
-
-  .index-hero-section__brand-mark svg {
-    width: 36px;
-    height: 36px;
-  }
-}
 
 /* Small Mobile (480px and below) */
-@media (max-width: 480px) {
-  .index-hero-section {
-    min-height: 500px;
-  }
-
-  .index-hero-section__headline {
-    font-size: 1.9rem;
-  }
-
-  .index-hero-section__subtitle {
-    font-size: 1rem;
-  }
-
-  .index-hero-section__btn {
-    padding: 12px 24px;
-    font-size: 0.95rem;
-  }
-}
-/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
 .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
 @media (max-width: 1024px) {
   .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
 }
 @media (max-width: 768px) {
   .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
-}
-
-
-.index-hero-section .index-hero-section__btn--secondary {
-  color: var(--background-color, var(--background, var(--bg-light, #FFFFFF))) !important;
 }
 
 .index-cta-section .index-cta-section__btn--secondary {
@@ -8393,6 +8156,21 @@ nav.navbar .sub-menu li a:hover { color: #163350 !important; background-color: r
 .index-cta-section .index-cta-section__btn--primary svg {
 
 }
+
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (בית-hero)
+   Added: 2026-07-19T14:55:09.600Z
+   ═══════════════════════════════════════════════════════════ */
+.index-hero-section { position: relative; width: 100%; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; background-color: var(--bg-dark); direction: rtl; } .index-hero-section .index-hero-section-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; background-size: cover; background-position: center; background-repeat: no-repeat; } .index-hero-section .index-hero-section-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background: linear-gradient(180deg, rgba(15,28,42,0.55) 0%, rgba(15,28,42,0.75) 60%, rgba(15,28,42,0.9) 100%); pointer-events: none; } .index-hero-section .index-hero-section-content { position: relative; z-index: 10; width: 100%; max-width: 1200px; margin: 0 auto; padding: 120px 24px 60px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; } .index-hero-section .index-hero-section-text-group { display: flex; flex-direction: column; align-items: center; gap: 24px; } .index-hero-section .index-hero-section-headline { font-size: 3rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; color: var(--text-light); text-shadow: 0 4px 20px rgba(0,0,0,0.5); max-width: 900px; margin: 0; } .index-hero-section .index-hero-section-subtitle { font-size: 1.4rem; font-weight: 400; line-height: 1.6; color: var(--text-light); text-shadow: 0 2px 12px rgba(0,0,0,0.4); max-width: 700px; margin: 0; opacity: 0.9; } .index-hero-section .index-hero-section-cta-group { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px; } .index-hero-section .index-hero-section-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 32px; border-radius: 6px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); white-space: nowrap; } .index-hero-section .index-hero-section-btn-primary { background: var(--accent); color: var(--text-dark); border: none; box-shadow: 0 8px 32px rgba(0,0,0,0.25); } .index-hero-section .index-hero-section-btn-primary:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); } .index-hero-section .index-hero-section-btn-secondary { background: transparent; color: var(--text-light); border: 2px solid var(--text-light); } .index-hero-section .index-hero-section-btn-secondary:hover { background: rgba(255,255,255,0.1); transform: translateY(-4px); } .index-hero-section .index-hero-section-decorative-motif { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 10; width: 80px; height: 4px; pointer-events: none; } .index-hero-section .index-hero-section-decorative-motif svg { display: block; width: 100%; height: 100%; } .index-hero-section .index-hero-section-logo-mark { position: absolute; top: 32px; inset-inline-end: 32px; z-index: 10; width: 48px; height: 48px; opacity: 0.6; pointer-events: none; } .index-hero-section .index-hero-section-logo-mark svg { display: block; width: 100%; height: 100%; } @media (max-width: 768px) { .index-hero-section .index-hero-section-content { padding: 100px 16px 40px; gap: 24px; } .index-hero-section .index-hero-section-headline { font-size: 2.2rem; } .index-hero-section .index-hero-section-subtitle { font-size: 1.1rem; } .index-hero-section .index-hero-section-cta-group { flex-direction: column; width: 100%; } .index-hero-section .index-hero-section-btn { width: 100%; text-align: center; } .index-hero-section .index-hero-section-logo-mark { top: 16px; inset-inline-end: 16px; width: 36px; height: 36px; } .index-hero-section .index-hero-section-decorative-motif { bottom: 24px; } }
+/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
+.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
+@media (max-width: 1024px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
+}
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
+}
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
