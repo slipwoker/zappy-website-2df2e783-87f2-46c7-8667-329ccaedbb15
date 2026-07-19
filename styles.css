@@ -8142,6 +8142,38 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   content: none;
   display: none;
 }
+
+.index-trust-band-section__container .trust-band-separator {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 28px auto 32px auto !important;
+  min-height: 20px !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+.index-trust-band-section__container .trust-band-separator__line {
+  flex: 1 !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent, var(--accent, var(--accent-color, var(--accent, #C49A4A))), transparent) !important;
+  border-radius: 1px !important;
+  min-width: 40px !important;
+  display: block !important;
+}
+
+.index-trust-band-section__container .trust-band-separator__ornament {
+  width: 14px !important;
+  height: 14px !important;
+  background: var(--accent, var(--accent-color, var(--accent, #C49A4A))) !important;
+  transform: rotate(45deg) !important;
+  border-radius: 2px !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+  opacity: 0.8 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
