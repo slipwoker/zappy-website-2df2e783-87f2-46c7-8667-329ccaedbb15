@@ -1084,6 +1084,240 @@
   }
 }
 </style>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-trust-band-section {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  padding: 80px 16px;
+  position: relative;
+  overflow: visible;
+}
+
+.index-trust-band-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Image Pair */
+.index-trust-band-section__image-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.index-trust-band-section__image-card {
+  margin: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(28,60,90,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-trust-band-section__image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(28,60,90,0.18);
+}
+
+.index-trust-band-section__image-wrapper {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background-color: #f0f4f7;
+}
+
+.index-trust-band-section__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.index-trust-band-section__image-card:hover .index-trust-band-section__image-wrapper img {
+  transform: scale(1.03);
+}
+
+.index-trust-band-section__image-label {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(26, 43, 60, 0.85);
+  backdrop-filter: blur(4px);
+  color: var(--text-light);
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Separator */
+.index-trust-band-section__separator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.index-trust-band-section__separator svg {
+  display: block;
+}
+
+/* Heading */
+.index-trust-band-section__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  color: #1A2B3C;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 56px auto;
+}
+
+/* Cards Grid */
+.index-trust-band-section__cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  direction: rtl;
+}
+
+.index-trust-band-section__card {
+  background: var(--bg-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(28,60,90,0.08);
+  padding: 2rem 1.5rem;
+  border: 1px solid #E2E8EE;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: right;
+}
+
+.index-trust-band-section__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(28,60,90,0.15);
+}
+
+.index-trust-band-section__card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(26,60,94,0.06) 0%, rgba(201,168,76,0.12) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--primary);
+}
+
+.index-trust-band-section__card-icon svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.index-trust-band-section__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.index-trust-band-section__card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #1A2B3C;
+  margin: 0;
+  text-align: right;
+}
+
+.index-trust-band-section__card-text {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #4A5568;
+  margin: 0;
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .index-trust-band-section {
+    padding: 60px 16px;
+  }
+
+  .index-trust-band-section__image-pair {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+
+  .index-trust-band-section__image-label {
+    bottom: 12px;
+    right: 12px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  .index-trust-band-section__heading {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    padding: 0 8px;
+  }
+
+  .index-trust-band-section__cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .index-trust-band-section__card {
+    padding: 1.5rem 1.25rem;
+    gap: 16px;
+  }
+
+  .index-trust-band-section__card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+  }
+
+  .index-trust-band-section__card-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .index-trust-band-section__card-title {
+    font-size: 1.25rem;
+  }
+
+  .index-trust-band-section__separator {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-trust-band-section__cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .index-trust-band-section__heading {
+    font-size: 1.8rem;
+  }
+}
+
+</style>
     <style id="zappy-critical-above-fold-css">
 html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;min-width:320px;overflow-x:clip}img,svg,video{max-width:100%;height:auto}main{display:block}.container{width:min(100% - 32px,1200px);margin-inline:auto}.navbar,nav.navbar,header .navbar,header[role="banner"]{position:relative;z-index:1000;width:100%}.nav-container,.navbar .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}.logo,.logo-link img{display:block;width:35px;height:35px;object-fit:contain}.nav-menu,#navMenu{list-style:none;margin:0;padding:0}.navbar a,.nav-menu a,#navMenu a,.navbar .nav-links a{color:inherit;text-decoration:none}.navbar .sub-menu,.nav-menu .sub-menu,#navMenu .sub-menu{display:none}.fa,.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands{display:inline-block;min-width:1em;text-align:center}html:not(#zappy-noop)[data-zappy-site-type="ecommerce"] .phone-header-btn,html:not(#zappy-noop) .navbar:has(.nav-ecommerce-icons)>.phone-header-btn{display:none!important;visibility:hidden!important;width:0!important;height:0!important;pointer-events:none!important}.zappy-preview-empty-store-cta{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}.zappy-catalog-menu{background:var(--surface-color,var(--surface,linear-gradient(135deg,#f8f9fa 0%,#fff 100%)));border-bottom:1px solid var(--border-color,#e5e7eb);padding:0;position:sticky;top:0;z-index:90}.zappy-catalog-menu[dir=rtl],.zappy-catalog-menu.rtl{direction:rtl}.zappy-catalog-menu[dir=ltr],.zappy-catalog-menu.ltr{direction:ltr}.catalog-menu-container{max-width:1440px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:10px 24px;overflow:visible}.catalog-menu-categories,.catalog-menu-list{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin:0;padding:0;list-style:none}.catalog-menu-item{display:inline-flex;align-items:center;padding:8px 16px;font-size:14px;font-weight:500;color:var(--text-color,var(--text,#374151));text-decoration:none;border-radius:20px;white-space:nowrap}.catalog-menu-all{background:var(--primary-color,var(--primary,#111));color:var(--text-light,#fff)!important}.catalog-menu-parent{position:relative;display:inline-flex;align-items:center}.catalog-menu-trigger{display:inline-flex;align-items:center;gap:6px}.catalog-menu-chevron{flex-shrink:0}.catalog-menu-parent>.sub-menu{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}.hero-section,.index-hero-section,section[class*="hero"]{position:relative;overflow:hidden;min-height:560px}.hero-bg-wrapper,.hero-bg-image,section[class*="hero"] [class*="hero-bg"]{position:absolute;inset:0;width:100%;height:100%}.hero-bg-wrapper img,.hero-bg-image img,section[class*="hero"] [data-hero-bg],section[class*="hero"] img[data-hero-background="true"]{width:100%!important;height:100%!important;object-fit:cover!important;display:block}.hero-content,section[class*="hero"] .container{position:relative;z-index:2}@media(max-width:768px){:root{--header-height:72px;--total-header-height:72px;--zappy-mobile-menu-top:72px}html[data-zappy-site-type="ecommerce"] body{padding-top:var(--total-header-height,72px)}html[data-zappy-site-type="ecommerce"] body>nav.navbar,html[data-zappy-site-type="ecommerce"] body>.navbar:not(.zappy-catalog-menu){position:fixed!important;top:0;left:0;right:0;z-index:100000;width:100%;margin-bottom:0}.zappy-catalog-menu{position:fixed;top:var(--header-height,72px);left:0;right:0;z-index:99999}.nav-container,.navbar .container{min-height:60px}.nav-menu,#navMenu{max-width:100vw;overflow-x:hidden}.hero-section,.index-hero-section,section[class*="hero"]{min-height:100svh}.hero-bg-wrapper,.hero-bg-image,.hero-scrim{min-height:100svh}}
 :root{--nav-bg:#FFFFFF}.navbar{background-color:#FFFFFF!important}
@@ -1851,77 +2085,84 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
   </div>
 </section>
 
-<section data-band-index="2" class="index-trust-band-section" data-layout-spec="בית-trust-band" dir="rtl" id="index-trust-band-section" style="background-color: rgb(244, 246, 247); background-image: none; position: relative; overflow: hidden; --zappy-bg-color: #F5F6F8;" data-zappy-bg-orig-size-var="" data-zappy-bg-orig-position-var="" data-zappy-bg-type="color" data-zappy-bg-color="#F5F6F8" data-zappy-bg-image="" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="38" data-zappy-bg-video-type="" data-zappy-bg-video-url="">
+<section class="index-trust-band-section" data-layout-spec="בית-trust-band" dir="rtl" id="index-trust-band-section">
   <div class="index-trust-band-section__container">
-    <!-- Before-and-After Image -->
-    <div class="index-trust-band-section__before-after" style="max-width: 100%; margin: 0 0 0 0; border-radius: 0px; overflow: hidden; box-shadow: none; width: 100%"><div class="before-after-banner">
-  <div class="before-after-banner__half">
-    <img src="/assets/site-image-index-case-studies-image-1-1784210097343-0gkteu.webp?v=1784210099979" alt="שיפוץ מטבח" data-element-type="image" data-element-id="img-1784211675183-ejiey69sk" loading="lazy" decoding="async" fetchpriority="low">
-    <span class="before-after-banner__label">שיפוץ חדר רחצה</span>
-  </div>
-  <div class="before-after-banner__half">
-    <img src="/assets/site-image-index-case-studies-image-1-1784210807232-qpfzp6.webp?v=1784210807232" alt="שיפוץ חדר רחצה" data-element-type="image" data-element-id="img-1784211675183-cw30qdezi" loading="lazy" decoding="async" fetchpriority="low">
-    <span class="before-after-banner__label">שיפוץ מטבח</span>
-  </div>
-</div></div>
-
-<div class="trust-band-separator" aria-hidden="true">
-  <div class="trust-band-separator__line"></div>
-  <div class="trust-band-separator__ornament"></div>
-  <div class="trust-band-separator__line"></div>
-</div>
-
-<h2 class="index-trust-band-section__heading" style="color: rgb(255, 255, 255);"><span style="color: #20252b !important">מפחיתים את אי הוודאות, מגשימים את החלום</span></h2>
-    <!-- Section Heading -->
     
-    <div class="index-trust-band-section__accent-bar" aria-hidden="true"></div>
-
-    <!-- Three Proof Points -->
-    <div class="index-trust-band-section__proof-grid zappy-preserve-css-grid" id="zappy-auto-grid-1784146396793-95cnvm" data-zappy-auto-grid="true" data-original-item-width="339" data-original-gap="24px" style="display: grid; --zappy-grid-cols: repeat(3, minmax(0, 1fr)); align-items: stretch !important; grid-template-columns: repeat(3, minmax(0, 1fr));" data-zappy-explicit-columns="true">
-      <article class="index-trust-band-section__proof-card" data-grid-item-index="0">
-        <div class="index-trust-band-section__proof-icon">
-          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" data-element-id="zappy-temp-icon-1784206649344-89reawsj0" style="width: 50px !important; height: 50px !important; color: rgb(196, 154, 74);" width="50" height="50" data-size-adjusted="true">
-            <path d="M24 4L30.68 17.04L45.18 19.56L34.59 30.04L36.84 44.52L24 38.16L11.16 44.52L13.41 30.04L2.82 19.56L17.32 17.04L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
-          </svg>
+    <!-- Top: Two Side-by-Side Renovation Images -->
+    <div class="index-trust-band-section__image-pair">
+      <figure class="index-trust-band-section__image-card">
+        <div class="index-trust-band-section__image-wrapper">
+          <img data-context="Modern bathroom renovation in a residential home in Israel, featuring floor-to-ceiling large format tiles, floating vanity, walk-in rainfall shower with glass partition, matte black fixtures, and warm LED accent lighting, professional architectural photography" width="600" height="400" src="/assets/image-construction-renovation-section-trust-band-index-trust-band-image-1.webp" alt="שיפוץ חדר רחצה מודרני" loading="lazy" decoding="async" fetchpriority="low">
         </div>
-        <h3 class="index-trust-band-section__proof-title">תיאום מלא - קבלן ראשי אחד</h3>
-        <p class="index-trust-band-section__proof-text"><span style="color: #6b747c !important"><span style="color: #ffffff !important">אנחנו מרכזים את כל שלבי הבנייה והשיפוץ תחת קורת גג אחת. משלב התכנון ועד למסירה, אתם מקבלים נקודת קשר אחת שמנהלת את כל התהליך – בלי כאבי ראש של תיאום בין קבלנים שונים.</span></span></p>
-      </article>
-
-      <article class="index-trust-band-section__proof-card" data-grid-item-index="1">
-        <div class="index-trust-band-section__proof-icon"><svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M10 24L20 34L38 14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
-        <h3 class="index-trust-band-section__proof-title">בעלי מקצוע מורשים ומנוסים</h3>
-        <p class="index-trust-band-section__proof-text"><span style="color: #6b747c !important"><span style="color: #ffffff !important">צוות המומחים שלנו כולל חשמלאים, אינסטלטורים, קונסטרוקטורים וצבעים – כולם בעלי רישיון וניסיון מוכח. כל ענפי הבנייה תחת אחריות אחת, כך שאתם יכולים להיות רגועים.</span></span></p>
-      </article>
-
-      <article class="index-trust-band-section__proof-card" data-grid-item-index="2">
-        <div class="index-trust-band-section__proof-icon">
-          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 44V12H16V4H32V12H40V44H8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
-            <path d="M16 44V28H32V44" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
-            <path d="M20 20H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-          </svg>
+        <figcaption class="index-trust-band-section__image-label">שיפוץ חדר רחצה</figcaption>
+      </figure>
+      
+      <figure class="index-trust-band-section__image-card">
+        <div class="index-trust-band-section__image-wrapper">
+          <img data-context="Luxury kitchen renovation in a private home in Israel, showing an open-plan layout with island, quartz countertops, custom cabinetry, stainless steel appliances, pendant lighting, and herringbone backsplash, bright natural light, professional interior photography" width="600" height="400" src="/assets/image-construction-renovation-section-trust-band-index-trust-band-image-2.webp" alt="שיפוץ מטבח יוקרתי" loading="lazy" decoding="async" fetchpriority="low">
         </div>
-        <h3 class="index-trust-band-section__proof-title">מגורים, מסחר והיתרים – הכל כלול</h3>
-        <p class="index-trust-band-section__proof-text"><span style="color: #6b747c !important"><span style="color: #ffffff !important">מניסיון של שנים בשיפוץ דירות, בתים פרטיים ונכסים מסחריים. אנחנו מטפלים גם בהיתרי כיבוי אש לעסקים, עבודה בגובה, וכל מה שצריך כדי שהפרויקט יעמוד בכל התקנים.</span></span></p>
-      </article>
+        <figcaption class="index-trust-band-section__image-label">שיפוץ מטבח</figcaption>
+      </figure>
     </div>
 
-    <!-- Before-and-After Image Frame -->
-    
+    <!-- Decorative Gold Separator -->
+    <div class="index-trust-band-section__separator" aria-hidden="true">
+      <svg data-no-icon-edit="true" aria-hidden="true" width="80" height="4" viewBox="0 0 80 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="80" height="4" rx="2" fill="var(--accent)"></rect>
+      </svg>
     </div>
 
-    <!-- Bottom explanatory note -->
-    
-  
+    <!-- Bold Heading -->
+    <h2 class="index-trust-band-section__heading">מקצועיות ללא פשרות. תוצאות שמדברות בעד עצמן.</h2>
 
-  <!-- Bottom Divider: Stepped Skyline / Scaffolding Silhouette -->
-  <div class="index-trust-band-section__divider-wrapper" aria-hidden="true">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,42 L40,42 L40,28 L80,28 L80,42 L120,42 L120,20 L160,20 L160,42 L200,42 L200,32 L240,32 L240,20 L280,20 L280,38 L320,38 L320,24 L360,24 L360,40 L400,40 L400,18 L440,18 L440,36 L480,36 L480,22 L520,22 L520,40 L560,40 L560,28 L600,28 L600,42 L640,42 L640,20 L680,20 L680,36 L720,36 L720,24 L760,24 L760,40 L800,40 L800,18 L840,18 L840,38 L880,38 L880,26 L920,26 L920,40 L960,40 L960,22 L1000,22 L1000,38 L1040,38 L1040,28 L1080,28 L1080,42 L1120,42 L1120,20 L1160,20 L1160,42 L1200,42 L1200,80 Z" fill="var(--bg-light)"></path>
-    </svg>
+    <!-- 3 Proof/Trust Cards -->
+    <div class="index-trust-band-section__cards-grid">
+      
+      <!-- Card 1: Experience -->
+      <article class="index-trust-band-section__card">
+        <div class="index-trust-band-section__card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="var(--primary)" stroke-width="2" fill="none"></circle>
+            <path d="M16 8V16L21 21" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="16" cy="16" r="2" fill="var(--accent)"></circle>
+          </svg>
+        </div>
+        <div class="index-trust-band-section__card-content">
+          <h3 class="index-trust-band-section__card-title">ניסיון מוכח של מעל 15 שנה</h3>
+          <p class="index-trust-band-section__card-text">צברנו ידע מעשי במאות פרויקטים ברחבי הארץ, החל מדירות קטנות ועד מבנים מסחריים מורכבים. כל פרויקט מקבל יחס אישי וסטנדרט ביצוע ללא פשרות.</p>
+        </div>
+      </article>
+
+      <!-- Card 2: Licensing & Insurance -->
+      <article class="index-trust-band-section__card">
+        <div class="index-trust-band-section__card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 14L12 20L26 6" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="16" cy="16" r="14" stroke="var(--accent)" stroke-width="1.5" fill="none"></circle>
+          </svg>
+        </div>
+        <div class="index-trust-band-section__card-content">
+          <h3 class="index-trust-band-section__card-title">רישיונות, ביטוחים ותעודות</h3>
+          <p class="index-trust-band-section__card-text">אנחנו פועלים בהתאם לכל התקנים המחמירים בישראל. החברה מבוטחת בביטוח צד ג' וביטוח עבודה, ומחזיקה ברישיונות קבלן רשומים לעבודות בנייה, חשמל, אינסטלציה ובטיחות אש.</p>
+        </div>
+      </article>
+
+      <!-- Card 3: Warranty & Service -->
+      <article class="index-trust-band-section__card">
+        <div class="index-trust-band-section__card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4L19 11H26L20.5 15.5L22.5 22.5L16 18L9.5 22.5L11.5 15.5L6 11H13L16 4Z" stroke="var(--primary)" stroke-width="1.8" stroke-linejoin="round" fill="none"></path>
+            <circle cx="16" cy="16" r="14" stroke="var(--accent)" stroke-width="1.2" fill="none"></circle>
+          </svg>
+        </div>
+        <div class="index-trust-band-section__card-content">
+          <h3 class="index-trust-band-section__card-title">אחריות מקיפה ושקיפות מלאה</h3>
+          <p class="index-trust-band-section__card-text">אנחנו עומדים מאחורי העבודה שלנו. כל פרויקט מגובה באחריות כתובה, ליווי צמוד לאורך כל הדרך, ושקיפות מוחלטת בתמחור, בלוחות הזמנים ובבחירת החומרים.</p>
+        </div>
+      </article>
+
+    </div>
+
   </div>
 </section>
 
