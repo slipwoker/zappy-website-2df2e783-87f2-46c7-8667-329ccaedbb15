@@ -7715,6 +7715,21 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-hero-section .hero-eyebrow {
   color: #FFFFFF !important;
 }
+
+.index-trust-band-section .index-trust-band-section__before-after {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.index-trust-band-section .index-trust-band-section__before-after::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 15%, var(--accent, var(--accent-color, var(--accent, #C49A4A))) 85%, transparent 100%);
+  margin: 32px auto 0 auto;
+  border-radius: 2px;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
