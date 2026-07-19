@@ -52,7 +52,9 @@ Information about WCAG compliance and accessibility features.
 
 ## How to Contact Us
 
-- (No contact details configured yet.)
+- Email: innovativesolutionsisrael@gmail.com
+- Phone: 052-8833123
+- Phone (tel): tel:0528833123
 
 ### Contact form
 - URL: https://example.com/contact
