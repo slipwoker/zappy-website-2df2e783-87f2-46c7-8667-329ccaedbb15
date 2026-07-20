@@ -8555,6 +8555,19 @@ body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .n
   height: 100% !important;
   object-fit: cover !important;
 }
+
+.projects-portfolio-section__image-wrapper [data-zappy-zoom-wrapper="true"] {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 3/2 !important;
+}
+
+.projects-portfolio-section__image-wrapper [data-zappy-zoom-wrapper="true"] img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: 50% 50% !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
