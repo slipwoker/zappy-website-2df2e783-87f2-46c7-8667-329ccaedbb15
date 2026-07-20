@@ -2131,9 +2131,17 @@ if (document.readyState === 'complete') {
         var shStr = wrapper.getAttribute('data-zappy-zoom-wrapper-height');
         var swNum = parseFloat(swStr) || 0;
         var shNum = parseFloat(shStr) || 0;
+        // If the slot's height is only as tall as the wrapper, that height is
+        // content-driven by THIS wrapper (common for .home-feature-image-wrap
+        // with no CSS height). Switching to height:100% then collapses on the
+        // next layout pass because the absolute <img> no longer contributes
+        // intrinsic height — the Artistic Epoxy / nwooda middle-card bug.
+        var slotSizedByWrapper = Math.abs(slotRect.height - wrapRect.height) <= 2;
+        var canFillSlotHeight = slotRect.height > 0 && !slotSizedByWrapper &&
+          (forceCardSlotFill || (slotHeightGap > 4 && slotCS.overflow !== 'visible'));
         wrapper.style.setProperty('width', '100%', 'important');
         wrapper.style.setProperty('max-width', '100%', 'important');
-        if (slotRect.height > 0 && (forceCardSlotFill || (slotHeightGap > 4 && slotCS.overflow !== 'visible'))) {
+        if (canFillSlotHeight) {
           wrapper.style.setProperty('height', '100%', 'important');
           wrapper.style.setProperty('aspect-ratio', 'auto', 'important');
           wrapper.style.setProperty('padding-bottom', '0', 'important');
@@ -2175,8 +2183,12 @@ if (document.readyState === 'complete') {
             }
           }
         } else if (swNum > 0 && shNum > 0) {
+          // Heightless / content-sized slots (and already-collapsed wrappers):
+          // keep width:100% and size via the saved aspect ratio so absolute
+          // images remain visible after refresh.
           wrapper.style.setProperty('aspect-ratio', swNum + '/' + shNum, 'important');
           wrapper.style.setProperty('height', 'auto', 'important');
+          wrapper.style.setProperty('padding-bottom', '0', 'important');
         }
         wrapper.setAttribute('data-zappy-card-slot-fill', '1');
         // Also stretch any intermediate .zappy-inserted-element ancestors up
@@ -5230,6 +5242,7 @@ function fixContrast(){
         subtotal: 'Subtotal',
         vatIncluded: 'Including VAT',
         shipping: 'Shipping',
+        pickup: 'Pickup',
         discount: 'Discount',
         totalToPay: 'Total to Pay',
         days: 'days',
@@ -5241,6 +5254,7 @@ function fixContrast(){
         subtotal: 'סכום ביניים',
         vatIncluded: 'כולל מע"מ',
         shipping: 'משלוח',
+        pickup: 'איסוף',
         discount: 'הנחה',
         totalToPay: 'סה"כ לתשלום',
         days: 'ימים',
@@ -5363,6 +5377,30 @@ function fixContrast(){
       return [street, city].filter(Boolean).join(', ');
     }
 
+    function isPickupShippingSelected() {
+      // Prefer the live checkout flag set by updateOrderTotals / zappySelectShipping.
+      if (typeof window.__zappySelectedShippingIsPickup === 'boolean') {
+        return window.__zappySelectedShippingIsPickup;
+      }
+      var checked = document.querySelector('input[name="shipping"]:checked');
+      var option = checked
+        ? checked.closest('.shipping-option')
+        : document.querySelector('.shipping-option.selected');
+      if (!option) return false;
+      var attr = option.getAttribute('data-is-pickup');
+      if (attr === 'true') return true;
+      if (attr === 'false') return false;
+      if (option.querySelector('.shipping-address')) return true;
+      var methodId = (checked && checked.value) || option.getAttribute('data-method-id');
+      var cached = window.__zappyShippingMethodsCache;
+      if (methodId && Array.isArray(cached)) {
+        for (var i = 0; i < cached.length; i++) {
+          if (String(cached[i].id) === String(methodId)) return !!cached[i].is_pickup;
+        }
+      }
+      return false;
+    }
+
     function patchCheckoutStaticText() {
       ensureCheckoutTotalsStructure();
       var agree = document.querySelector('[data-i18n="ecom_agreeToTerms"]') || document.querySelector('.terms-checkbox-label > span > span:first-child');
@@ -5371,7 +5409,9 @@ function fixContrast(){
       if (terms && terms.textContent !== getText('termsAndConditions')) terms.textContent = getText('termsAndConditions');
       setLabelForValue('#subtotal', 'subtotal');
       setLabelForValue('#vat-amount', 'vatIncluded');
-      setLabelForValue('#shipping-cost', 'shipping');
+      // Must NOT force "Shipping:" over a selected pickup method — the MutationObserver
+      // re-runs this after updateOrderTotals sets "Pickup:" and was flipping it back.
+      setLabelForValue('#shipping-cost', isPickupShippingSelected() ? 'pickup' : 'shipping');
       setLabelForValue('#checkout-discount-amount', 'discount');
       setLabelForValue('#discount', 'discount');
       setLabelForValue('#order-total', 'totalToPay');
@@ -5394,6 +5434,7 @@ function fixContrast(){
         var res = await fetch(apiBase + '/api/ecommerce/storefront/shipping?websiteId=' + encodeURIComponent(websiteId) + '&lang=' + encodeURIComponent(lang));
         var data = await res.json();
         var methods = data && data.data ? data.data : [];
+        window.__zappyShippingMethodsCache = methods;
         methods.forEach(function(method) {
           var block = container.querySelector('.shipping-method-block[data-method-id="' + method.id + '"]');
           if (!block) return;
