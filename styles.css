@@ -8524,6 +8524,37 @@ body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .n
   height: 100% !important;
   display: block !important;
 }
+
+.projects-portfolio-section__image-wrapper [data-zappy-zoom-wrapper],
+.projects-portfolio-section__image-wrapper [data-zappy-zoom-wrapper] {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.projects-portfolio-section__image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.projects-portfolio-section__image-wrapper img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  aspect-ratio: 3 / 2;
+}
+
+.projects-portfolio-section__image-wrapper [data-zappy-zoom-wrapper] {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 3 / 2;
+}
+
+.projects-portfolio-section__image-wrapper img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
