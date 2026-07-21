@@ -8126,7 +8126,7 @@ body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .n
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 60px;
   position: relative;
@@ -8359,7 +8359,7 @@ body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .n
 }
 
 .index-hero-section .index-hero-section-container {
-  flex-direction: row-reverse !important;
+  flex-direction: row-reverse;
 }
 
 /* ═══════════════════════════════════════════════════════════
