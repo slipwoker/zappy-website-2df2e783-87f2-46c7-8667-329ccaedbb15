@@ -8299,9 +8299,9 @@ body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .n
   }
 
   .index-hero-section .index-hero-section-headline {
-    font-size: 2.2rem;
-    line-height: 1.2;
-  }
+  font-size: 36px !important;
+  line-height: 1.2;
+}
 
   .index-hero-section .index-hero-section-subtitle {
     font-size: 1.1rem;
