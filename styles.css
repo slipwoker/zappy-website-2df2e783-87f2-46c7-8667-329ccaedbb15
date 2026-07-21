@@ -8521,6 +8521,14 @@ body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .n
   background-blend-mode: overlay, normal !important;
   background-color: #1A2B3C !important;
 }
+
+#index-hero-section {
+  background-image: url('assets/image-construction-renovation-section-case-studies-index-case-studies-image-1.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: normal !important;
+  background-color: #1A2B3C !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
